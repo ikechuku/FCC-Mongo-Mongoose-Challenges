@@ -11,10 +11,9 @@
 // Add `mongodb` and `mongoose` to the project's `package.json`. Then require 
 // `mongoose`. Store your **mLab** database URI in the private `.env` file 
 // as `MONGO_URI`. Connect to the database using `mongoose.connect(<Your URI>)`
-const mongoose = require('mongoose')
-const db = require('mongodb')
 
-mongoose, connect('mongodb+srv://techknight:<tigerlace>@fcc-cluster0-k6upe.mongodb.net/test?retryWrites=true&w=majority')
+const mongoose = require('mongoose')
+mongoose.connect('mongodb+srv://techknight:tigerlace@fcc-cluster0-k6upe.mongodb.net/test?retryWrites=true&w=majority')
 
 /** # SCHEMAS and MODELS #
 /*  ====================== */
